@@ -1,4 +1,4 @@
-package com.example.day_8_android_learning
+package com.example.day_8_android_learning.view
 
 import android.os.Bundle
 import android.util.Log
@@ -10,7 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
+import com.example.day_8_android_learning.R
 import com.example.day_8_android_learning.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
