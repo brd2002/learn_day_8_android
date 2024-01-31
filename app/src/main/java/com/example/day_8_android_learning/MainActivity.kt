@@ -1,6 +1,7 @@
 package com.example.day_8_android_learning
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -22,7 +23,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // action bar -> top bar
         setSupportActionBar(binding.toolbar)
+
+        // navigation controller -> logic for navigation
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
@@ -34,6 +38,25 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onStart() {
+        Log.i("onstart" , "onStart")
+                super.onStart()
+    }
+
+    override fun onResume() {
+        Log.i("onresume" , "onResume")
+        super.onResume()
+    }
+
+    override fun onPause() {
+        Log.i("onpause" , "onPause")
+        super.onPause()
+    }
+
+    override fun onStop() {
+        Log.i("onstop" , "onStop")
+        super.onStop()
+    }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
