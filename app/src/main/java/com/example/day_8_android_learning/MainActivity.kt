@@ -10,6 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import com.example.day_8_android_learning.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -40,21 +41,24 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         Log.i("onstart" , "onStart")
+        Toast.makeText(this , "onStart", Toast.LENGTH_SHORT).show()
                 super.onStart()
     }
 
     override fun onResume() {
-        Log.i("onresume" , "onResume")
+        Log.i("bharat" , "onResume")
+        Toast.makeText(this , "onResume", Toast.LENGTH_SHORT).show()
         super.onResume()
     }
 
     override fun onPause() {
-        Log.i("onpause" , "onPause")
+        Log.i("bharat" , "onPause")
         super.onPause()
     }
 
     override fun onStop() {
-        Log.i("onstop" , "onStop")
+        Log.i("bharat" , "onStop")
+        Toast.makeText(this , "onStop", Toast.LENGTH_SHORT).show()
         super.onStop()
     }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
