@@ -23,12 +23,13 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        // initialization connect with xml fragment file java / kotlin code
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
 
     }
 
+    // after fragment or view created then you will build the logic
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
